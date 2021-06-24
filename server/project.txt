@@ -1,0 +1,14 @@
+data : {
+  message: '',
+  data: [],
+  count: 0
+}
+
+data : {
+  message: '',
+  data: {},  
+}
+
+errors: [
+    { message: "" }
+]

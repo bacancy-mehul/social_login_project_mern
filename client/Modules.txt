@@ -1,0 +1,29 @@
+@material-ui/core @material-ui/icons axios moment react-google-login react-redux react-router-dom redux redux-thunk
+
+
+Google login
+Gives back some data like email, google_id, verified_mail, token_id
+send this data to our backend server.
+
+In our backend server we vrify token id using google library and extract data from it. 
+from those data we will lookup in db. if db have data then we simply get that user and create JWT on server
+and send back to client. client will keep that token store on localstorage.
+
+if user not available on DB then we will create user from google data in our db and then from that user 
+we will create JWT and send back to client.
+
+
+Multiple social media signup.
+problems:
+:: email can be unique
+:: facebook signup can be used by phone number so no email exist
+:: email should not be required field. but should be unique.
+
+so google sign in frontend:
+click on button call
+
+????
+gauth to login
+forgot password using  gmailId
+Link with new password
+gmail login

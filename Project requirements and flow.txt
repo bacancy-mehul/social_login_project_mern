@@ -1,0 +1,70 @@
+Login with social media and normal
+search
+crud operation
+sorting
+image upload
+seed file for pre fill data
+role management
+with good designing
+
+App Requirements:
+- Login With social media (use google)
+- CRUD Operation : Create Post, Delete Post, Update Post, Get all Posts, Get Post
+- User and Admin can create, delete, update their post
+- Admin can delete, update anybody's post
+- Admin can change role of user [user <=> admin]
+- Admin can see list of users, their total posts 
+- Posts: Title, Image, Short Description (Truncate long description)
+- Post: Title, Description, Image, Author, Publish Date
+- Role: User, Admin
+- Search : By post name
+- Sort : Added By Admin, User 
+- logout user
+- **Add Pagination
+
+Tech:
+- DB : Mongodb
+- Backend : Javascript (Node)
+- Frontend : React, Redux**, 
+- 3rd party: Google signin, Cloudinary for image storage
+- CSS library: Material UI
+
+Flow:
+FE:
+- Google Signin Button
+- All Posts Created by Users (only view)
+- Auth User: Create Post [Title, Image, Body]
+- Auth User: Delete Post From Home Posts Page (Their Post)
+- Auth User: Delete Post From Post Page (Their Post)
+- Auth User: Update Post From Post Page (Their Post)
+- Auth Admin: Delete Post From Home Posts Page (Any Post)
+- Auth Admin: Delete Post From Post Page (Any Post)
+- Auth Admin: Update Post From Post Page (Any Post)
+- Auth Admin : see extra tab link [Users]
+- Auth Admin : On Clicking Users Tab , Admin can View all Users from there, Update their role.
+- Search : Search Post By Name (Put search button there)
+- Sort Drop Down : Sort By Old post | Recent Post [By Default recent Posts]
+
+Pages:
+- Nav bar :
+  google sign n button | login user
+  users [only admin can see this]
+  posts [Home screen]
+- Home [all Posts] with sort dropdown and search button, Post card [delete Button]
+- Post Page with post image, title, Body [delete Button, update button]
+
+BE: 
+- Role based operation [admin|user]
+- Remeber user google sign in, add information in DB
+- Auth User: Create Post API [Title, Image, Body]
+- Auth User: Delete Post API (Their Post)
+- Auth User: Delete Post API (Their Post)
+- Auth User: Update Post API (Their Post)
+- Auth Admin: Delete Post API (Any Post)
+- Auth Admin: Delete Post API (Any Post)
+- Auth Admin: Update Post API (Any Post) { For POST Delete Update Make Generic API for both user and admin }
+- Auth Admin : Get List Of Users API
+- Auth Admin : update Role Of User API
+- Get Posts by Post name API Using search
+- Get Posts Sort by Date API Using DropDown
+- Seed Json File
